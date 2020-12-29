@@ -35,7 +35,6 @@ main =
   runTest do
     runChapterExamples
     {-  Move this block comment starting point to enable more tests
-Note to reader: Delete this line to expand comment block -}
     suite "Exercise Group - Simple Pattern Matching" do
       test "Exercise - factorial" do
         Assert.equal 1
@@ -125,7 +124,6 @@ Note to reader: Delete this line to expand comment block -}
         Assert.equal { top: 3.0, left: 3.0, right: 7.0, bottom: 7.0 }
           $ shapeBounds (Clipped samplePicture { x: 5.0, y: 5.0 } 4.0 4.0)
 
-{- Note to reader: Delete this line to expand comment block
 -}
 runChapterExamples :: TestSuite
 runChapterExamples =
