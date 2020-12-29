@@ -21,10 +21,14 @@ type Entry =
 type AddressBook = List Entry
 
 showAddress :: Address -> String
-showAddress addr = addr.street <> ", " <> addr.city <> ", " <> addr.state
+showAddress addr = addr.street <> ", " <>
+                   addr.city <> ", " <>
+                   addr.state
 
 showEntry :: Entry -> String
-showEntry entry = entry.lastName <> ", " <> entry.firstName <> ": " <> showAddress entry.address
+showEntry entry = entry.lastName <> ", " <>
+                  entry.firstName <> ": " <>
+                  showAddress entry.address
 
 emptyBook :: AddressBook
 emptyBook = empty
